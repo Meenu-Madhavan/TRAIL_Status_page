@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAIL Project Status</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+        }
+
+        /* Left Panel */
+        .left-panel {
+            width: 250px;
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-panel h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .left-panel ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .left-panel ul li {
+            margin: 10px 0;
+        }
+
+        .left-panel ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .left-panel ul li a:hover, 
+        .left-panel ul li a.active {
+            background-color: #009688;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 270px;
+            padding: 30px;
+            width: 85%;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Highlighted Section */
+        .highlight {
+            background-color: #c8e6c9;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.5s ease-in-out;
+        }
+
+        /* Headings */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #005f73;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #009688;
+            border-bottom: 3px solid #009688;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+
+        /* Timeline List */
+        .timeline-list {
+            padding-left: 20px;
+            list-style-type: circle;
+        }
+
+        .timeline-list li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .timeline-list li strong {
+            color: #005f73;
+        }
+
+        /* Paragraph Styling */
+        p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        p strong {
+            font-weight: bold;
+        }
+
+        /* Status Log */
+        .status-log {
+            border-left: 4px solid #004d40;
+            padding-left: 20px;
+            margin-top: 30px;
+        }
+
+        .log-entry {
+            background: #f1f1f1;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .log-entry:hover {
+            background: #c8e6c9;
+        }
+
+        /* Timeline List */
+        .timeline-list {
+            padding-left: 20px;
+            list-style-type: circle;
+        }
+
+        .timeline-list li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .timeline-list li strong {
+            color: #005f73;
+        }
+
+        /* Dashboard Link */
+        .dashboard-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .dashboard-link a {
+            background: #009688;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+
+        .dashboard-link a:hover {
+            background: #004d40;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Panel -->
+    <div class="left-panel">
+        <h2>Key Items</h2>
+        <ul>
+            <li><a href="#project-objective" class="nav-link">Project Objective</a></li>
+            <li><a href="#start-date" class="nav-link">Start Date</a></li>
+            <li><a href="#principal-investigators" class="nav-link">Principal Investigators</a></li>
+            <li><a href="#timeline" class="nav-link">Projected Timelines</a></li>
+            <li><a href="#status" class="nav-link">Current Status</a></li>
+            <li><a href="#dashboard" class="nav-link">Dashboard Link</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>TRAIL Project Status</h1>
+        
+        <h2 id="project-objective">Project Objective</h2>
+        <p>
+            The objective of Project TRAIL is to gather Road Infrastructure data across 
+            100 Tier 2 and Tier 3 cities in India (both rural and urban), use AI-based 
+            Modeling Techniques to detect Road Assets, and map the results onto a 
+            web-based dashboard with GPS location markings.
+        </p>
+        
+        <h2 id="start-date">Start Date</h2>
+        <p><strong>March 2024</strong></p>
+
+        <h2 id="principal-investigators">Principal Investigators</h2>
+        <p><strong>Dr. Anbu Subramanian / Mr. Govind Krishnan</strong></p>
+        
+        <h2 id="timeline">Projected Timelines</h2>
+        <ul class="timeline-list">
+            <li><strong>May 2024:</strong> Beta; 4 assets in 6 cities, model run for 10 min footage per city (Completed) - <em>"Beta" refers to an initial test phase where the model was run on limited data to evaluate performance.</em></li>
+            <li><strong>July 2024:</strong> 4 assets in 6 cities with improved accuracy (Completed)</li>
+            <li><strong>September 2024:</strong> 6 assets in 6 cities (Completed)</li>
+            <li><strong>December 2024:</strong> 5 assets in 10 cities (Completed)</li>
+            <li><strong>January 2025:</strong> 10 assets in 10 cities (On track)</li>
+            <li><strong>March 2025:</strong> 20 cities, 10 assets (Dependent on data capture)</li>
+            <li><strong>June 2025:</strong> 50 cities, 15 assets</li>
+            <li><strong>December 2025:</strong> 100 cities, 25 assets</li>
+            <li><strong>March 2026:</strong> 100 cities, 30 assets</li>
+        </ul>
+        
+        <h2 id="status">Current Status</h2>
+        <div class="status-log">
+            <div class="log-entry">[Weekly update log entries will go here]</div>
+        </div>
+        
+        <h2 id="dashboard">Link to Dashboard</h2>
+        <p class="dashboard-link">
+            <a href="https://inaix.iiit.ac.in/TRAIL/" target="_blank">Go to TRAIL Dashboard</a>
+        </p>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll(".nav-link");
+            const sections = document.querySelectorAll(".main-content h2");
+
+            links.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault();
+
+                    // Remove 'active' from all links
+                    links.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Remove 'highlight' from all sections
+                    sections.forEach(section => section.classList.remove("highlight"));
+
+                    // Get the target section and scroll into view
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.classList.add("highlight");
+                        targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+                        // Remove highlight after 2 seconds
+                        setTimeout(() => {
+                            targetSection.classList.remove("highlight");
+                        }, 2000);
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
